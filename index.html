@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather-Dashboard</title>
+        <link rel="stylesheet" href="C:\Users\ADITYA\Desktop\KiK Web Task - 1\styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="left-header">
+                <div><img class="f-logo" src="images/main-logo.png"></div> 
+                <div><p class="f-logo-text">WeatherInfo</p></div> 
+            </div>
+            <div class="mid-header"></div>
+            <div class="rigth-header">
+                
+                <div id="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a class="links" href="#home">Home</a></li>
+                        <li><a class="links" href="#weather-section">Weather</a></li>
+                        <li><a class="links" href="#auth-section">Login/Signup</a></li>
+                        <li><a class="links" href="#about">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="home">
+            <div class="home-container">
+                <div class="home-horz1"></div>
+                <div class="home-horz2">
+                    <h1 align="center" class="heading-searchbar">Search For Any Place</h1>
+                    <p align="center" class="text-below-searchbar-heading">Get all weather details of your desired destination instantly</p>
+                    <div class="searchbar-container">
+                        <input id="city-input" align="center" class="searchbar" type="text" placeholder="Search for a place (for eg. Delhi, Mumbai etc.)">
+                        <div class="searchicon-container">
+                            <img id="search-btn" class="searchicon" src="images/search-icon-8.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="home-horz3"></div>
+            </div> 
+        </section>
+
+        <section id="weather-section">
+            <div class="weather-container">
+                <div class="weather-horz1"></div>
+                <div class="weather-card">
+                    <h2 >City Name, Country</h2>
+                    <p >Monday, December 4, 2024</p>
+                    <div class="weather-main">
+                        <div class="temp">25°C</div>
+                        <div class="icon">
+                            <img src="images/sun.png" class="weather-icon"> </div>
+                            <div class="description">Clear Sky</div>
+                    </div>
+
+                    <div class="weather-details-grid">
+                        <div class="detail-item">
+                            <img src="images/drop-silhouette.png" class="small-icons">
+                            <span>Humidity: <b class="humidity">60%</b></span>
+                        </div>
+                        <div class="detail-item">
+                            <img src="images/wind.png" class="small-icons"></i>
+                            <span>Wind: <b class="wind">15 km/h</b></span>
+                        </div>
+                        <div class="detail-item">
+                            <img src="images/barometer.png" class="small-icons"></i>
+                            <span>Pressure: <b class="pressure">1013 hPa</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-horz3"></div>
+            </div>
+        </section>
+
+        <section id="auth-section" class="auth-container">
+            <div class="form-wrapper">
+                
+                <div class="auth-form" id="login-form">
+                    <h2>Welcome Back</h2>
+                    <form onsubmit="return false;"> 
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="button" class="auth-btn" id="login-button">Login</button>
+                    </form>
+                    <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+                </div>
+
+                <div class="auth-form" id="signup-form" style="display: none;">
+                    <h2>Create Account</h2>
+                    <form onsubmit="return false;">
+                        <input type="text" placeholder="Username" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="button" class="auth-btn" id="signup-button">Sign Up</button>
+                    </form>
+                    <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2>About This Project</h2>
+                <p>This is a website created as per the instructions of the first assigned web development task by KodeinKGP Technology Web 3.0 society. This project helped us build strong HTML, CSS and JavaScript fundamentals by making the website. We learnt to use HTML by building the main layout of this webpage , learnt to use CSS by styling each component of the HTML program and implemented various functionalities in the website using JavaScript. </p>
+            </div>
+            <div>
+                <img src="images/web-development.png" class="project-logo"></i>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-links">
+                <a href="https://github.com" target="_blank"> GitHub</a>
+                <a href="https://linkedin.com" target="_blank"> LinkedIn</a>
+            </div>
+            <div class="legal-links">
+                <a href="https://en.wikipedia.org/wiki/Privacy_policy" target="_blank">Privacy Policy</a> | <a href="https://en.wikipedia.org/wiki/Terms_of_service " target="_blank">Terms and Conditions</a>
+            </div>
+            <p>&copy; 2025 WeatherInfo. All rights reserved.</p>
+            
+            <button id="back-to-top" title="Go to top">↑</button>
+        </footer>
+
+        <script src="C:\Users\ADITYA\Desktop\KiK Web Task - 1\script.js"></script>
+    </body>
+</html>
